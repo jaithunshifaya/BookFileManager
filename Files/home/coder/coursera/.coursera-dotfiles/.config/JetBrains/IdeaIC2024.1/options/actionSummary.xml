@@ -1,0 +1,25 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="OpenFile">
+      <i c="1" l="1727360419068" />
+    </e>
+    <e n="Run">
+      <i c="3" l="1727360625223" />
+    </e>
+    <e n="SaveAll">
+      <i c="3" l="1727360879192" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1725497458025" />
+    </e>
+    <e n="com.intellij.execution.actions.RunConfigurationsComboBoxAction$SelectConfigAction">
+      <i c="1" l="1725550798649" />
+    </e>
+    <e n="com.intellij.execution.actions.RunConfigurationsComboBoxAction$SelectConfigAction$2">
+      <i c="1" l="1725550791730" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="6" l="1727360675084" />
+    </e>
+  </component>
+</application>
