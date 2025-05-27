@@ -24,13 +24,14 @@ To install and run this project locally, follow these steps:
 1. Clone the repository:
    
    git clone https://github.com/jaithunshifaya/BookFileManager.git
+   
    cd BookFileManager
    
-2. Compile the Java files:
+3. Compile the Java files:
    
    javac Main.java
    
-3. Run the application:
+4. Run the application:
    
    java Main
   
