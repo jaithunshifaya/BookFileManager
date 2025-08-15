@@ -1,65 +1,39 @@
 import java.io.File;
-
 public class Main {
-
     public static void main(String[] args) {
-
-        // creating book files in myBooks directory
-
-        /*
+        // Creating book files in myBooks directory
         String directoryPath = "./myBooks";
         String[] titles = {"The Great Gatsby", "1984", "To Kill a Mockingbird"};
         String[] authors = {"F. Scott Fitzgerald", "George Orwell", "Harper Lee"};
 
         for (int i = 0; i < titles.length; i++) {
-            String fileName =  (titles[i]) + ".txt";
+            String fileName = titles[i] + ".txt";
             String content = "Title: " + titles[i] + "\nAuthor: " + authors[i] + "\nSample Content...";
             FileCreator.createSampleFile(directoryPath, fileName, content);
         }
-        */
 
-//      Task 1 testing
+        // Task 1: List files
+        DirectoryManager.listFilesAndDirectories(directoryPath);
 
+        // Task 2: Create a directory
+        String backupDir = "./myBooksBackup";
+        DirectoryManager.createDirectory(backupDir);
 
-//        String directoryPath = "./myBooks";
-//        DirectoryManager.listFilesAndDirectories(directoryPath);
+        // Task 3: Rename directory
+        DirectoryManager.renameDirectory(backupDir, "./BooksBackupDirectory");
 
+        // Task 4: Copy files
+        DirectoryManager.copyFiles(directoryPath, "./BooksBackupDirectory");
 
-//       Task 2 testing
+        // Task 5: Delete a file
+        DirectoryManager.deleteFile("./myBooks/1984.txt");
 
-//        String directoryPath = "./myBooksBackup";
-//        DirectoryManager.createDirectory(directoryPath);
-
-
-//     Task 3 testing
-
-//        String directoryPath = "./myBooksBackup";
-//        String newDirectoryPath = "./BooksBackupDirectory";
-//        DirectoryManager.renameDirectory(directoryPath, newDirectoryPath);
-
-
-//      Task 4 testing
-
-//        String srcPath = "./myBooks";
-//        String destPath = "./BooksBackupDirectory";
-//        DirectoryManager.copyFiles(srcPath, destPath);
-
-
-//     Task 5 testing
-
-//        String filePath = "./myBooks/1984.txt";
-//        DirectoryManager.deleteFile(filePath);
-
-
-//     Task 6 testing
-
-//        Book book = new Book("1984", "George Orwell", "978-0451524935");
-//        String filePath = "./myBooks/book.ser";
-//        Book.serializeBook(book, filePath);
-//        Book deserializedBook = Book.deserializeBook(filePath);
-//        System.out.println("Deserialized Book: " + deserializedBook);
-
-
+        // Task 6: Serialize and Deserialize Book
+        Book book = new Book("1984", "George Orwell", "978-0451524935");
+        String bookFilePath = "./myBooks/book.ser";
+        Book.serializeBook(book, bookFilePath);
+        Book deserializedBook = Book.deserializeBook(bookFilePath);
+        System.out.println("Deserialized Book: " + deserializedBook);
     }
-
 }
+
