@@ -7,7 +7,7 @@ public class Book implements Serializable {
     private String author;
     private String isbn;
 
-    // Constructor
+    // Constructor 
     public Book(String title, String author, String isbn) {
         this.title = title;
         this.author = author;
